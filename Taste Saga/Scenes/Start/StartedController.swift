@@ -10,7 +10,6 @@ import UIKit
 class StartedController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
        
     }
 
