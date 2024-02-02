@@ -11,8 +11,8 @@ class StartedController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+    
     }
-
     @IBAction func startButton(_ sender: Any) {
         passController()
     }

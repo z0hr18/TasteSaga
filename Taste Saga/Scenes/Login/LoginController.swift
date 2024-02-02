@@ -15,7 +15,14 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
+        passLogin()
     }
+    
+    func passLogin() {
+        UserDefaults.standard.setValue(true, forKey: "Start")
+       
+    }
+    
 }
 
 

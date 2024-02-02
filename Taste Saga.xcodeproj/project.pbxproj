@@ -157,6 +157,30 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		8CEAA71A2B6D3E280040E39F /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				8CEAA71D2B6D3E530040E39F /* Font */,
+				8CEAA71B2B6D3E3D0040E39F /* Color */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		8CEAA71B2B6D3E3D0040E39F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		8CEAA71D2B6D3E530040E39F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8C26EB752B528DEE00C625CF /* Font */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		8CEB9FC42B50093B0094AEEA = {
 			isa = PBXGroup;
 			children = (
@@ -178,8 +202,8 @@
 			children = (
 				8CEB9FD02B50093B0094AEEA /* AppDelegate.swift */,
 				8CEB9FD22B50093B0094AEEA /* SceneDelegate.swift */,
+				8CEAA71A2B6D3E280040E39F /* Help */,
 				8C6CEA502B5C0F6300F9F95A /* Scenes */,
-				8C26EB752B528DEE00C625CF /* Font */,
 				8CEB9FD62B50093B0094AEEA /* Main.storyboard */,
 				8CEB9FD92B50093D0094AEEA /* Assets.xcassets */,
 				8CEB9FDB2B50093D0094AEEA /* LaunchScreen.storyboard */,
