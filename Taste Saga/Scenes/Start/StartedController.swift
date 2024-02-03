@@ -20,7 +20,11 @@ class StartedController: UIViewController {
 
 extension StartedController {
     func passController() {
-        let controller = storyboard?.instantiateViewController(identifier: "LoginController") as! LoginController
-        navigationController?.show(controller, sender: nil)
+        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let sceneDelegate = scene.delegate as? SceneDelegate {
+//            UserDefaults.standard.set(true, forKey: "loggedIN")
+//            sceneDelegate.homePage(window: scene)
+            sceneDelegate.setLoginRoot(windowScene: scene)
+        }
     }
 }

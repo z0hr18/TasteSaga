@@ -19,16 +19,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         if UserDefaults.standard.bool(forKey: "Start") {
-            window = UIWindow(windowScene: windowScene)
-            let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
-            window?.rootViewController = UINavigationController(rootViewController: controller)
-            window?.makeKeyAndVisible()
+            setLoginRoot(windowScene: windowScene)
         } else {
             window = UIWindow(windowScene: windowScene)
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "startNav")
             window?.rootViewController = navigationController
             window?.makeKeyAndVisible()
         }
+    }
+    
+    func setLoginRoot(windowScene: UIWindowScene) {
+        window = UIWindow(windowScene: windowScene)
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
+        window?.rootViewController = UINavigationController(rootViewController: controller)
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
