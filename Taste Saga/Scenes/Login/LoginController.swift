@@ -1,32 +1,47 @@
 //
 //  LoginController.swift
 //  Taste Saga
-//
 //  Created by Zohra Guliyeva on 1/22/24.
 //
 
 import UIKit
+import FirebaseFirestoreInternal
+
 
 class LoginController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    @IBOutlet weak var button: UIButton!
+    
+    var items = [UserStruct]()
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
         passLogin()
     }
+    @IBAction func signİnButton(_ sender: Any) {
+     
+
+    }
+    
+    
+    @IBAction func accCreateButton(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(identifier: "\(LoginController.self)") as! LoginController
+        navigationController?.show(controller, sender: nil)
+    }
+    
+    
     
     func passLogin() {
         UserDefaults.standard.setValue(true, forKey: "Start")
-       
+        
     }
     
 }
 
 
-extension LoginController {
+extension LoginController: UITableViewDelegate {
     func style() {
         //email
         emailTextfield.layer.cornerRadius = 10
@@ -44,9 +59,9 @@ extension LoginController {
         passwordTextfield.layer.borderWidth = 0.5
         passwordTextfield.layer.borderColor = UIColor.lightGray.cgColor
         //button
-        button.layer.cornerRadius = 15
-        button.layer.shadowOpacity = 1
-        button.layer.shadowOffset = CGSize.zero
-        button.layer.shadowColor = UIColor.black.cgColor
+//        button.layer.cornerRadius = 15
+//        button.layer.shadowOpacity = 1
+//        button.layer.shadowOffset = CGSize.zero
+//        button.layer.shadowColor = UIColor.black.cgColor
     }
 }
