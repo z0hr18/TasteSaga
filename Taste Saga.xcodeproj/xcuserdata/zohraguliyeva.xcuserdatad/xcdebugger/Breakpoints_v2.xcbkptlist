@@ -7,79 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C0F53672-B4FB-47FA-B9FB-7DA3D92391C8"
-            shouldBeEnabled = "Yes"
+            uuid = "28433B56-E8C4-4A82-B48F-841A5126A66A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Taste Saga/Scenes/Login/LoginController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "signIn()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3AE70C8A-2F46-42BE-95E5-369D79DAA9E3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Taste Saga/Scenes/Login/LoginController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "signIn()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3AE70C8A-2F46-42BE-95E5-369D79DAA9E3 - 5f0b0eb4958db6d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Taste_Saga.LoginController.signIn() -&gt; ()"
-                  moduleName = "Taste Saga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zohraguliyeva/Documents/GitHub/Taste-Saga-ATL-FP/Taste%20Saga/Scenes/Login/LoginController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "3AE70C8A-2F46-42BE-95E5-369D79DAA9E3 - 5f0b0eb4958db6d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Taste_Saga.LoginController.signIn() -&gt; ()"
-                  moduleName = "Taste Saga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zohraguliyeva/Documents/GitHub/Taste-Saga-ATL-FP/Taste%20Saga/Scenes/Login/LoginController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "460">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3BA8A230-B94B-4190-AF25-BECB85DC1922"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Taste Saga/Scenes/Login/LoginController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "signIn()"
             landmarkType = "7">
          </BreakpointContent>

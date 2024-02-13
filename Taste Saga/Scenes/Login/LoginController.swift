@@ -20,8 +20,21 @@ class LoginController: UIViewController {
         style()
         passLogin()
     }
+    
     @IBAction func signİnButton(_ sender: Any) {
         signIn()
+//        if let email = emailTextfield.text,
+//           let password = passwordTextfield.text {
+//            Auth.auth().signIn(withEmail: email,
+//                               password: password) { result, error in
+//                if let error {
+//                    print(error.localizedDescription)
+//                } else if let _ = result?.user {
+//                    
+//                }
+//            }
+//        }
+        print("test")
 
     }
     
@@ -45,6 +58,25 @@ extension LoginController: UITableViewDelegate {
         UserDefaults.standard.setValue(true, forKey: "Start")
     }
     
+//    func changeRoot() {
+//        class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+//            var window: UIWindow?
+//            func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//                let windowScene = UIWindowScene(session: session, connectionOptions: connectionOptions)
+//                self.window = UIWindow(windowScene: windowScene)
+//                let storyboard = UIStoryboard(name: "MyStoryboardName", bundle: nil)
+//                guard let rootVC = storyboard.instantiateViewController(identifier: "ViewControllerIdentifierName") as? ViewController else {
+//                    print("ViewController not found")
+//                    return
+//                }
+//                let rootNC = UINavigationController(rootViewController: rootVC)
+//                self.window?.rootViewController = rootNC
+//                self.window?.makeKeyAndVisible()
+//            }
+//        }
+//    }
+    
+    
     func signIn() {
         if let email = emailTextfield.text,
            let password = passwordTextfield.text {
@@ -53,15 +85,14 @@ extension LoginController: UITableViewDelegate {
                 if let error {
                     print(error.localizedDescription)
                 } else if let _ = result?.user {
-                    let controller = self.storyboard?.instantiateViewController(withIdentifier: "\(TabBarController.self)") as! TabBarController
-                    self.navigationController?.show(controller, sender: nil)
+                    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                       let sceneDelegate = scene.delegate as? SceneDelegate {
+                        sceneDelegate.tabbarRoot(windowScene: scene)
+                    }
                 }
             }
         }
     }
-    
-    
-    
     
     func style() {
     }

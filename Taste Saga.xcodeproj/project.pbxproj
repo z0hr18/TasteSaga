@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8C87C9B02B7409BC00287249 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C87C9AF2B7409BC00287249 /* TabBarController.swift */; };
+		8C87C9B22B766BCE00287249 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C87C9B12B766BCE00287249 /* HomeController.swift */; };
+		8C87C9B52B77711C00287249 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C87C9B42B77711C00287249 /* HomeViewModel.swift */; };
+		8C87C9C32B77780F00287249 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C87C9C12B77780F00287249 /* HomeCell.swift */; };
+		8C87C9C42B77780F00287249 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C87C9C22B77780F00287249 /* HomeCell.xib */; };
 		8C97F3552B6D433C006B3FB4 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C97F3432B6D433B006B3FB4 /* Poppins-Italic.ttf */; };
 		8C97F3562B6D433C006B3FB4 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C97F3442B6D433C006B3FB4 /* Poppins-SemiBold.ttf */; };
 		8C97F3572B6D433C006B3FB4 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C97F3452B6D433C006B3FB4 /* Poppins-ExtraLightItalic.ttf */; };
@@ -75,6 +79,10 @@
 
 /* Begin PBXFileReference section */
 		8C87C9AF2B7409BC00287249 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8C87C9B12B766BCE00287249 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8C87C9B42B77711C00287249 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8C87C9C12B77780F00287249 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		8C87C9C22B77780F00287249 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		8C97F3432B6D433B006B3FB4 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		8C97F3442B6D433C006B3FB4 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		8C97F3452B6D433C006B3FB4 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -249,6 +257,10 @@
 		8C9FF25C2B5EF1AC00CA6EEF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8C87C9B12B766BCE00287249 /* HomeController.swift */,
+				8C87C9B42B77711C00287249 /* HomeViewModel.swift */,
+				8C87C9C12B77780F00287249 /* HomeCell.swift */,
+				8C87C9C22B77780F00287249 /* HomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -438,6 +450,7 @@
 				8CEB9FD82B50093B0094AEEA /* Main.storyboard in Resources */,
 				8C97F35C2B6D433C006B3FB4 /* Poppins-LightItalic.ttf in Resources */,
 				8C97F3652B6D433C006B3FB4 /* Poppins-Regular.ttf in Resources */,
+				8C87C9C42B77780F00287249 /* HomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,13 +462,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEB9FD12B50093B0094AEEA /* AppDelegate.swift in Sources */,
+				8C87C9B52B77711C00287249 /* HomeViewModel.swift in Sources */,
 				8C97F36A2B6D44C9006B3FB4 /* İmportFont.swift in Sources */,
 				8C97F36C2B6D44F2006B3FB4 /* İmportColor.swift in Sources */,
 				8C87C9B02B7409BC00287249 /* TabBarController.swift in Sources */,
+				8C87C9B22B766BCE00287249 /* HomeController.swift in Sources */,
 				8C9FF2602B5EFD5400CA6EEF /* LoginController.swift in Sources */,
 				8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */,
 				8C97F37C2B6E3A81006B3FB4 /* UserStruct.swift in Sources */,
 				8CEB9FD32B50093B0094AEEA /* SceneDelegate.swift in Sources */,
+				8C87C9C32B77780F00287249 /* HomeCell.swift in Sources */,
 				8C9FF25E2B5EF64B00CA6EEF /* StartedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
