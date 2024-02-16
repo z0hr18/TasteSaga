@@ -24,3 +24,10 @@ class HomeCell: UICollectionViewCell {
     }
 
 }
+
+extension HomeCell {
+//    func configure(foodİmage: String, foodTitleLabel: String, foodSubtitleLabel: String, timeLabel: String, caloriesLabel: String, serviceLabel: String ) {
+//        titleLabel.text = title
+//        imageLabel.image = UIImage(systemName: imageName)
+//    }
+}
