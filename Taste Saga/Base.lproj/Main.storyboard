@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tAm-W1-S1v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WlY-fB-GPb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -58,11 +58,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5e-99-Jes">
-                                <rect key="frame" x="60.666666666666657" y="764" width="272" height="40"/>
+                                <rect key="frame" x="135.33333333333334" y="764" width="122.33333333333334" height="40"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.1764705882" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8Xb-xQ-yBo"/>
-                                    <constraint firstAttribute="width" constant="272" id="fPY-A2-tnx"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -125,12 +124,16 @@
                                 <rect key="frame" x="0.0" y="143" width="393" height="626"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HJQ-dq-ePi">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="320" height="348"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xn2-Ly-1eg" id="BdY-Gu-9r8"/>
+                                    <outlet property="delegate" destination="Xn2-Ly-1eg" id="zH4-Yn-LYp"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bLf-vv-sZ4"/>
@@ -170,7 +173,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="iHA-E5-1iD">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tAm-W1-S1v" customClass="TabBarController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tAm-W1-S1v" customClass="TabBarController" customModule="Taste_Saga" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D7h-OG-jJz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -190,7 +193,7 @@
         <!--Login Controller-->
         <scene sceneID="NCv-TQ-3Vs">
             <objects>
-                <viewController storyboardIdentifier="LoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZEp-En-d0R" customClass="LoginController" customModule="Taste_Saga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZEp-En-d0R" customClass="LoginController" customModule="Taste_Saga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egT-ek-nmk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,7 +342,7 @@
         <scene sceneID="QXg-4D-n8A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PhQ-Q6-ahV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Categories" id="67t-py-Fvs"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="ic_recipes_grey" selectedImage="ic_recipes_orange" id="67t-py-Fvs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jyI-4R-5AU">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -358,7 +361,7 @@
         <scene sceneID="Pxn-L1-9hE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ov2-Cf-T7a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="0cB-ra-Eom"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home_grey" selectedImage="ic_home_orange" id="0cB-ra-Eom"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hR0-1Q-ISD">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -377,7 +380,7 @@
         <scene sceneID="GsQ-JC-3BQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clw-57-UMN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="G97-Mj-qSz"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="ic_favorites_grey" selectedImage="ic_favorites_orange" id="G97-Mj-qSz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eLu-7j-oVF">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -396,7 +399,7 @@
         <scene sceneID="NVB-Jg-Mrb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0U-BM-Wfv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="V6N-Nj-2ai"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_profile_grey" selectedImage="ic_profile_orange" id="V6N-Nj-2ai"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="73z-Jb-csF">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -499,6 +502,14 @@
         <image name="Blob" width="121" height="171"/>
         <image name="Eating donuts-bro" width="414" height="487"/>
         <image name="Login" width="284" height="260"/>
+        <image name="ic_favorites_grey" width="24" height="24"/>
+        <image name="ic_favorites_orange" width="24" height="24"/>
+        <image name="ic_home_grey" width="24" height="24"/>
+        <image name="ic_home_orange" width="24" height="24"/>
+        <image name="ic_profile_grey" width="24" height="24"/>
+        <image name="ic_profile_orange" width="24" height="24"/>
+        <image name="ic_recipes_grey" width="24" height="24"/>
+        <image name="ic_recipes_orange" width="24" height="24"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

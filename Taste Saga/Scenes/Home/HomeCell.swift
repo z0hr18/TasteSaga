@@ -9,7 +9,7 @@ import UIKit
 
 class HomeCell: UICollectionViewCell {
     
-    @IBOutlet weak var foodİmage: UICollectionView!
+    @IBOutlet weak var foodİmage: UIImageView!
     
     @IBOutlet weak var foodTitleLabel: UILabel!
     @IBOutlet weak var foodSubtitleLabel: UILabel!
@@ -26,8 +26,13 @@ class HomeCell: UICollectionViewCell {
 }
 
 extension HomeCell {
-//    func configure(foodİmage: String, foodTitleLabel: String, foodSubtitleLabel: String, timeLabel: String, caloriesLabel: String, serviceLabel: String ) {
-//        titleLabel.text = title
-//        imageLabel.image = UIImage(systemName: imageName)
-//    }
+    func configure(foodImageName: String, foodTitle: String, foodSubtitle: String, time: String, calories: String, service: String) {
+        foodİmage.image = UIImage(named: "baku")
+        foodTitleLabel.text = foodTitle
+        foodSubtitleLabel.text = foodSubtitle
+        timeLabel.text = time
+        caloriesLabel.text = calories
+        serviceLabel.text = service
+
+    }
 }
