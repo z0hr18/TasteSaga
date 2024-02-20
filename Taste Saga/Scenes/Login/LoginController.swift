@@ -22,7 +22,7 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signİnButton(_ sender: Any) {
-        signIn()
+//        signIn()
 //        if let email = emailTextfield.text,
 //           let password = passwordTextfield.text {
 //            Auth.auth().signIn(withEmail: email,
@@ -77,22 +77,22 @@ extension LoginController: UITableViewDelegate {
 //    }
     
     
-    func signIn() {
-        if let email = emailTextfield.text,
-           let password = passwordTextfield.text {
-            Auth.auth().signIn(withEmail: email, 
-                               password: password) { result, error in
-                if let error {
-                    print(error.localizedDescription)
-                } else if let _ = result?.user {
-                    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                       let sceneDelegate = scene.delegate as? SceneDelegate {
-                        sceneDelegate.tabbarRoot(windowScene: scene)
-                    }
-                }
-            }
-        }
-    }
+//    func signIn() {
+//        if let email = emailTextfield.text,
+//           let password = passwordTextfield.text {
+//            Auth.auth().signIn(withEmail: email, 
+//                               password: password) { result, error in
+//                if let error {
+//                    print(error.localizedDescription)
+//                } else if let _ = result?.user {
+//                    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+//                       let sceneDelegate = scene.delegate as? SceneDelegate {
+//                        sceneDelegate.tabbarRoot(windowScene: scene)
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     func style() {
     }

@@ -14,17 +14,17 @@ class StartedController: UIViewController {
     
     }
     @IBAction func startButton(_ sender: Any) {
-        passController()
+//        passController()
     }
 }
 
 extension StartedController {
-    func passController() {
-        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let sceneDelegate = scene.delegate as? SceneDelegate {
-//            UserDefaults.standard.set(true, forKey: "loggedIN")
-//            sceneDelegate.homePage(window: scene)
-            sceneDelegate.setLoginRoot(windowScene: scene)
-        }
-    }
+//    func passController() {
+//        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+//           let sceneDelegate = scene.delegate as? SceneDelegate {
+////            UserDefaults.standard.set(true, forKey: "loggedIN")
+////            sceneDelegate.homePage(window: scene)
+//            sceneDelegate.setLoginRoot(windowScene: scene)
+//        }
+//    }
 }

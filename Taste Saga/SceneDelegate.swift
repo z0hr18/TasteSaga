@@ -12,32 +12,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        if UserDefaults.standard.bool(forKey: "Start") {
-            setLoginRoot(windowScene: windowScene)
-        } else {
-            window = UIWindow(windowScene: windowScene)
-            let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "startNav")
-            window?.rootViewController = navigationController
-            window?.makeKeyAndVisible()
-        }
-    }
-    
-    func setLoginRoot(windowScene: UIWindowScene) {
-        window = UIWindow(windowScene: windowScene)
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
-        window?.rootViewController = UINavigationController(rootViewController: controller)
-        window?.makeKeyAndVisible()
-    }
-
-    func tabbarRoot(windowScene: UIWindowScene) {
-        window = UIWindow(windowScene: windowScene)
-        let tabbarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
-        window?.rootViewController = tabbarController
-        window?.makeKeyAndVisible()
-    }
+//    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        
+//        if UserDefaults.standard.bool(forKey: "Start") {
+//            setLoginRoot(windowScene: windowScene)
+//        } else {
+//            window = UIWindow(windowScene: windowScene)
+//            let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "startNav")
+//            window?.rootViewController = navigationController
+//            window?.makeKeyAndVisible()
+//        }
+//    }
+//    
+//    func setLoginRoot(windowScene: UIWindowScene) {
+//        window = UIWindow(windowScene: windowScene)
+//        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
+//        window?.rootViewController = UINavigationController(rootViewController: controller)
+//        window?.makeKeyAndVisible()
+//    }
+//
+//    func tabbarRoot(windowScene: UIWindowScene) {
+//        window = UIWindow(windowScene: windowScene)
+//        let tabbarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
+//        window?.rootViewController = tabbarController
+//        window?.makeKeyAndVisible()
+//    }
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

@@ -37,6 +37,7 @@
 		8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C97F37D2B6E616D006B3FB4 /* RegisterController.swift */; };
 		8C9FF25E2B5EF64B00CA6EEF /* StartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF25D2B5EF64B00CA6EEF /* StartedController.swift */; };
 		8C9FF2602B5EFD5400CA6EEF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF25F2B5EFD5400CA6EEF /* LoginController.swift */; };
+		8CDD56B82B84CA7100C80FBD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56B72B84CA7100C80FBD /* DataModel.swift */; };
 		8CDD83A82B6FF41F0043BD85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A72B6FF41F0043BD85 /* FirebaseAnalytics */; };
 		8CDD83AA2B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A92B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion */; };
 		8CDD83AC2B6FF41F0043BD85 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83AB2B6FF41F0043BD85 /* FirebaseAnalyticsSwift */; };
@@ -108,6 +109,7 @@
 		8C97F37D2B6E616D006B3FB4 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		8C9FF25D2B5EF64B00CA6EEF /* StartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedController.swift; sourceTree = "<group>"; };
 		8C9FF25F2B5EFD5400CA6EEF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8CDD56B72B84CA7100C80FBD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		8CEB9FCD2B50093B0094AEEA /* Taste Saga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste Saga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9FD02B50093B0094AEEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9FD22B50093B0094AEEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +267,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		8CDD56B62B84C9B200C80FBD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD56B72B84CA7100C80FBD /* DataModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		8CDD83B12B700E0E0043BD85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +333,7 @@
 				8CEAA71A2B6D3E280040E39F /* Help */,
 				8C97F37A2B6E3A3C006B3FB4 /* UserData */,
 				8C6CEA502B5C0F6300F9F95A /* Scenes */,
+				8CDD56B62B84C9B200C80FBD /* Network */,
 				8CEB9FD62B50093B0094AEEA /* Main.storyboard */,
 				8CEB9FD92B50093D0094AEEA /* Assets.xcassets */,
 				8CEB9FDB2B50093D0094AEEA /* LaunchScreen.storyboard */,
@@ -467,6 +478,7 @@
 				8C97F36C2B6D44F2006B3FB4 /* İmportColor.swift in Sources */,
 				8C87C9B02B7409BC00287249 /* TabBarController.swift in Sources */,
 				8C87C9B22B766BCE00287249 /* HomeController.swift in Sources */,
+				8CDD56B82B84CA7100C80FBD /* DataModel.swift in Sources */,
 				8C9FF2602B5EFD5400CA6EEF /* LoginController.swift in Sources */,
 				8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */,
 				8C97F37C2B6E3A81006B3FB4 /* UserStruct.swift in Sources */,
