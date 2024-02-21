@@ -20,9 +20,13 @@
                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-Qw-DHc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
                         <subviews>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X76-r8-fet">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baku" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-NE-EJr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="183.33333333333334"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="183.33000000000001" id="P4W-eP-WgH"/>
                                 </constraints>
@@ -79,8 +83,10 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="X76-r8-fet" firstAttribute="leading" secondItem="pw8-Qw-DHc" secondAttribute="leading" id="0Io-6t-zh4"/>
+                            <constraint firstAttribute="bottom" secondItem="X76-r8-fet" secondAttribute="bottom" id="2SB-Wj-xJH"/>
                             <constraint firstItem="BNj-5A-JyY" firstAttribute="leading" secondItem="7Wm-jm-ICh" secondAttribute="trailing" constant="8" symbolic="YES" id="3oW-ez-p71"/>
                             <constraint firstItem="sXs-i4-oiV" firstAttribute="leading" secondItem="llj-j4-3VZ" secondAttribute="trailing" constant="57" id="4Cg-cs-D6D"/>
                             <constraint firstItem="4Lk-NE-EJr" firstAttribute="centerX" secondItem="pw8-Qw-DHc" secondAttribute="centerX" id="68g-Iy-shY"/>
@@ -88,6 +94,7 @@
                             <constraint firstItem="ylQ-B6-Iy9" firstAttribute="leading" secondItem="pw8-Qw-DHc" secondAttribute="leading" constant="22" id="BQO-rK-2L7"/>
                             <constraint firstAttribute="bottom" secondItem="7Wm-jm-ICh" secondAttribute="bottom" constant="27" id="BhV-cb-Pgp"/>
                             <constraint firstItem="BNj-5A-JyY" firstAttribute="leading" secondItem="sXs-i4-oiV" secondAttribute="trailing" constant="54" id="Bxg-nC-x7x"/>
+                            <constraint firstItem="X76-r8-fet" firstAttribute="top" secondItem="pw8-Qw-DHc" secondAttribute="top" id="HT4-LZ-7ic"/>
                             <constraint firstAttribute="bottom" secondItem="llj-j4-3VZ" secondAttribute="bottom" constant="29" id="IGj-ne-6Kh"/>
                             <constraint firstAttribute="bottom" secondItem="sXs-i4-oiV" secondAttribute="bottom" constant="29" id="KTN-5a-dbF"/>
                             <constraint firstItem="llj-j4-3VZ" firstAttribute="leading" secondItem="pw8-Qw-DHc" secondAttribute="leading" constant="60" id="NtW-2Z-dPT"/>
@@ -100,6 +107,7 @@
                             <constraint firstItem="4Lk-NE-EJr" firstAttribute="top" secondItem="pw8-Qw-DHc" secondAttribute="top" id="cVj-WG-IYk"/>
                             <constraint firstItem="qRD-sy-kHk" firstAttribute="leading" secondItem="pw8-Qw-DHc" secondAttribute="leading" constant="22" id="jSb-BS-9uF"/>
                             <constraint firstItem="RSE-Yi-cKp" firstAttribute="leading" secondItem="qRD-sy-kHk" secondAttribute="trailing" constant="69" id="oPQ-Qm-4Ng"/>
+                            <constraint firstAttribute="trailing" secondItem="X76-r8-fet" secondAttribute="trailing" id="xUo-6U-xld"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -128,9 +136,6 @@
         <image name="baku" width="220" height="220"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

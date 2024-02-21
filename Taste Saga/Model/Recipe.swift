@@ -1,8 +1,8 @@
 //
-//  DataModel.swift
+//  Recipe.swift
 //  Taste Saga
 //
-//  Created by Zohra Guliyeva on 2/20/24.
+//  Created by Zohra Guliyeva on 2/21/24.
 //
 
 import Foundation
@@ -20,4 +20,3 @@ struct Recipe: Codable {
     let totalTime: Double?
     let cuisineType: [String]?
 }
-

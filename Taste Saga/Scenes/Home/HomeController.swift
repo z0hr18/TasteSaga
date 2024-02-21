@@ -11,8 +11,12 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var colllectionView: UICollectionView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         self.colllectionView.dataSource = self
         self.colllectionView.delegate = self
