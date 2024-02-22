@@ -7,6 +7,18 @@
 
 import Foundation
 
+struct APIResponse: Codable {
+    let hits: [RecipeLinks]
+    let _links: NextLink
+    let from: Int
+    let to: Int
+    let count: Int
+}
+
+struct RecipeLinks: Codable {
+    let recipe: Recipe
+}
+
 struct Recipe: Codable {
     let uri: String
     let label: String
@@ -19,4 +31,13 @@ struct Recipe: Codable {
     let calories: Double
     let totalTime: Double?
     let cuisineType: [String]?
+}
+
+struct NextLink: Codable {
+    let next: Next?
+}
+
+struct Next: Codable {
+    let href: String
+    let title: String
 }

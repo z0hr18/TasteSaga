@@ -44,6 +44,7 @@
 		8CDD56C22B8625A500C80FBD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD56C12B8625A500C80FBD /* Alamofire */; };
 		8CDD56C42B8626EB00C80FBD /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56C32B8626EB00C80FBD /* HomeEndpoint.swift */; };
 		8CDD56C62B86270600C80FBD /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56C52B86270600C80FBD /* HomeManager.swift */; };
+		8CDD56C82B8764AF00C80FBD /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56C72B8764AF00C80FBD /* HomeUseCase.swift */; };
 		8CDD83A82B6FF41F0043BD85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A72B6FF41F0043BD85 /* FirebaseAnalytics */; };
 		8CDD83AA2B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A92B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion */; };
 		8CDD83AC2B6FF41F0043BD85 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83AB2B6FF41F0043BD85 /* FirebaseAnalyticsSwift */; };
@@ -121,6 +122,7 @@
 		8CDD56BE2B86254F00C80FBD /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		8CDD56C32B8626EB00C80FBD /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
 		8CDD56C52B86270600C80FBD /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		8CDD56C72B8764AF00C80FBD /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		8CEB9FCD2B50093B0094AEEA /* Taste Saga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste Saga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9FD02B50093B0094AEEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9FD22B50093B0094AEEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				8C87C9B12B766BCE00287249 /* HomeController.swift */,
 				8C87C9B42B77711C00287249 /* HomeViewModel.swift */,
 				8CDD56C32B8626EB00C80FBD /* HomeEndpoint.swift */,
+				8CDD56C72B8764AF00C80FBD /* HomeUseCase.swift */,
 				8CDD56C52B86270600C80FBD /* HomeManager.swift */,
 				8C87C9C12B77780F00287249 /* HomeCell.swift */,
 				8C87C9C22B77780F00287249 /* HomeCell.xib */,
@@ -512,6 +515,7 @@
 				8CDD56C42B8626EB00C80FBD /* HomeEndpoint.swift in Sources */,
 				8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */,
 				8CDD56BA2B86231100C80FBD /* Recipe.swift in Sources */,
+				8CDD56C82B8764AF00C80FBD /* HomeUseCase.swift in Sources */,
 				8C97F37C2B6E3A81006B3FB4 /* UserStruct.swift in Sources */,
 				8CEB9FD32B50093B0094AEEA /* SceneDelegate.swift in Sources */,
 				8CDD56BD2B8624A400C80FBD /* NetworkManager.swift in Sources */,

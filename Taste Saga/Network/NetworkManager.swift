@@ -8,25 +8,28 @@
 import Foundation
 import Alamofire
 
+import Foundation
+import Alamofire
+
 class NetworkManager {
     
-    static func request<T: Codable>(model: T.Type,
-                                    endpoint: String,
-                                    method: HTTPMethod = .get,
-                                    parameters: Parameters? = nil,
-                                    encoding: ParameterEncoding = URLEncoding.default,
-                                    completion: @escaping (T?, Error?) -> Void) {
-
-        AF.request(endpoint,
-                   method: method,
-                   parameters: parameters,
-                   encoding: encoding).responseDecodable(of: T.self) { response in
+    static func fetchRecipes(query: String, completion: @escaping (Result<APIResponse, Error>) -> Void) {
+        let url = NetworkHelper.baseURL
+        let parameters: [String: Any] = [
+            "type": NetworkHelper.type,
+            "app_id": NetworkHelper.appID,
+            "app_key": NetworkHelper.appKey,
+            "q": query
+        ]
+        
+        AF.request(url, parameters: parameters).responseDecodable(of: APIResponse.self) { response in
             switch response.result {
-            case .success(let data):
-                completion(data, nil)
+            case .success(let apiResponse):
+                completion(.success(apiResponse))
             case .failure(let error):
-                completion(nil, error)
+                completion(.failure(error))
             }
         }
     }
 }
+
