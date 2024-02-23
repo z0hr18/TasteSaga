@@ -32,10 +32,9 @@ class HomeController: UIViewController {
                     
                     print("Yemekler:")
                     for recipe in self?.recipes ?? [] {
-                        print(recipe.label)
+                        print(recipe)
                     }
                 case .failure(let error):
-                    
                     print("Error: \(error.localizedDescription)")
                 }
             }

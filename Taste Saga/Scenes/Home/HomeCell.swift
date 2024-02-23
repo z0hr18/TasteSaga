@@ -29,9 +29,15 @@ extension HomeCell {
     func configure(foodImageName: String, foodTitle: String, foodSubtitle: [String]?, time: Double?, calories: Double, service: Int) {
         foodİmage.showImage(image: foodImageName)
         foodTitleLabel.text = foodTitle
-        foodSubtitleLabel.text = foodSubtitle
-        timeLabel.text = time
-        caloriesLabel.text = calories
-        serviceLabel.text = service
+        let subtitleText = foodSubtitle?.joined(separator: ", ") ?? ""
+               foodSubtitleLabel.text = subtitleText
+         if let time = time {
+            timeLabel.text = "\(Int(time))" + " minutes"
+        } else {
+            timeLabel.text = "Not available time"
+        }
+        let caloriesPerPerson = Int(Double(calories) / Double(service))
+        caloriesLabel.text = "\(caloriesPerPerson)"
+        serviceLabel.text = String(service) + " people"
     }
 }
