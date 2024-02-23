@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeCell: UICollectionViewCell {
     
@@ -22,22 +23,15 @@ class HomeCell: UICollectionViewCell {
         super.awakeFromNib()
        
     }
-    func configure(foodİmage: String, foodTitleLabel: String, foodSubtitleLabel: String,timeLabel: String, caloriesLabel: String, serviceLabel: String  ) {
-        foodİmage.image = image
-        self.movies = movies
-        collection.reloadData()
-    }
-
 }
 
 extension HomeCell {
-    func configure(foodImageName: String, foodTitle: String, foodSubtitle: String, time: String, calories: String, service: String) {
-        foodİmage.image = UIImage(named: )
+    func configure(foodImageName: String, foodTitle: String, foodSubtitle: [String]?, time: Double?, calories: Double, service: Int) {
+        foodİmage.showImage(image: foodImageName)
         foodTitleLabel.text = foodTitle
         foodSubtitleLabel.text = foodSubtitle
         timeLabel.text = time
         caloriesLabel.text = calories
         serviceLabel.text = service
-
     }
 }
