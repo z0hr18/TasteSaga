@@ -15,10 +15,7 @@ class NetworkHelper {
     static let type = "public"
     static let query = "Christmas"
     
-//    static func join(endpoint: String) -> String {
-//        return "\(baseURL)\(endpoint)?app_id=\(appID)&app_key=\(appKey)"
-//    }
-    
+
 //    
 //    let url = "https://api.edamam.com/api/recipes/v2"
 //    let parameters: Parameters = [

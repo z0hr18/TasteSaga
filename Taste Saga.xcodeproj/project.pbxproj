@@ -190,6 +190,7 @@
 		8C6CEA502B5C0F6300F9F95A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8CDD56D52B89DF6E00C80FBD /* Details */,
 				8C87C9AA2B738CA600287249 /* TabBar */,
 				8C9FF2572B5EEA9500CA6EEF /* Start */,
 				8C9FF2582B5EEAA800CA6EEF /* Login */,
@@ -297,6 +298,7 @@
 		8CDD56B62B84C9B200C80FBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CDD56D12B89403100C80FBD /* FoodViewModel.swift */,
 				8CDD56B72B84CA7100C80FBD /* DataModel.swift */,
 				8CDD56B92B86231100C80FBD /* Recipe.swift */,
 			);
@@ -315,10 +317,16 @@
 		8CDD56D02B893F9100C80FBD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8CDD56D32B89493100C80FBD /* RecipeDetailsController.swift */,
-				8CDD56D12B89403100C80FBD /* FoodViewModel.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8CDD56D52B89DF6E00C80FBD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD56D32B89493100C80FBD /* RecipeDetailsController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		8CDD83B12B700E0E0043BD85 /* Frameworks */ = {

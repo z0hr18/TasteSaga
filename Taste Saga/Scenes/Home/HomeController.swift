@@ -55,15 +55,15 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as? HomeCell else {
             return UICollectionViewCell()
         }
-        let recipe = recipes[indexPath.row]
-        cell.configure(
-               foodImageName: recipe.image,
-               foodTitle: recipe.label,
-               foodSubtitle: recipe.dishType,
-               time: recipe.totalTime,
-               calories: recipe.calories,
-               service: recipe.yield
-           )
+        cell.configure(data: recipes[indexPath.row])
+//        cell.configure(
+//               foodImageName: recipe.image,
+//               foodTitle: recipe.label,
+//               foodSubtitle: recipe.dishType,
+//               time: recipe.totalTime,
+//               calories: recipe.calories,
+//               service: recipe.yield
+//           )
             return cell
     }
    

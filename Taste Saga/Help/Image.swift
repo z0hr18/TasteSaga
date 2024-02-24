@@ -10,6 +10,6 @@ import SDWebImage
 
 extension UIImageView {
     func showImage(image: String?) {
-        self.sd_setImage(with: URL(string: "\(image ?? "")"), placeholderImage: UIImage(named: "baku"))
+        self.sd_setImage(with: URL(string: "\(image ?? "")"))
     }
 }

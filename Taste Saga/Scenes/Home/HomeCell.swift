@@ -26,18 +26,28 @@ class HomeCell: UICollectionViewCell {
 }
 
 extension HomeCell {
-    func configure(foodImageName: String, foodTitle: String, foodSubtitle: [String]?, time: Double?, calories: Double, service: Int) {
-        foodİmage.showImage(image: foodImageName)
-        foodTitleLabel.text = foodTitle
-        let subtitleText = foodSubtitle?.joined(separator: ", ") ?? ""
-               foodSubtitleLabel.text = subtitleText
-         if let time = time {
-            timeLabel.text = "\(Int(time))" + " minutes"
+    func configure(data: Recipe) {
+        foodİmage.showImage(image: data.image)
+        foodTitleLabel.text = data.label
+//        let subtitleText = data.dishType?.joined(separator: ", ") ?? ""
+//        foodSubtitleLabel.text = subtitleText
+        foodSubtitleLabel.text = data.dishType?.first
+//         if let time = time {
+//            timeLabel.text = "\(Int(time))" + " minutes"
+//        } else {
+//            timeLabel.text = "Not available time"
+//        }
+        if let time = data.totalTime {
+            if time == 0 {
+                timeLabel.text = "30 minutes"
+            } else {
+                timeLabel.text = "\(Int(time)) minutes"
+            }
         } else {
             timeLabel.text = "Not available time"
         }
-        let caloriesPerPerson = Int(Double(calories) / Double(service))
+        let caloriesPerPerson = Int(Double(data.calories) / Double(data.yield))
         caloriesLabel.text = "\(caloriesPerPerson)"
-        serviceLabel.text = String(service) + " people"
+        serviceLabel.text = String(data.yield) + " people"
     }
 }
