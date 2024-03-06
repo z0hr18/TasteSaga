@@ -23,6 +23,8 @@ class HomeCell: UICollectionViewCell {
         super.awakeFromNib()
        
     }
+    
+    
 }
 
 extension HomeCell {

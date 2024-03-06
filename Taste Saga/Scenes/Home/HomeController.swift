@@ -11,6 +11,8 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var colllectionView: UICollectionView!
     var recipes = [Recipe]()
+    var recipeDetails: [FoodViewModel] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +72,37 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width, height: 348)
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // selected recipei al
+        let selectedRecipe = recipes[indexPath.row]
+        
+        // selected recipeden bir FoodViewModel duzeltmek
+        let recipeDetailViewModel = FoodViewModel(
+            uri: selectedRecipe.uri,
+            title: selectedRecipe.label,
+            subtitle: selectedRecipe.dishType?.first ?? "Unknown",
+            imageURL: URL(string: selectedRecipe.image),
+            time: selectedRecipe.totalTime ?? 30, // `totalTime` nildise 30 istifade elemek
+            calories: selectedRecipe.calories,
+            servings: selectedRecipe.yield,
+            ingredients: selectedRecipe.ingredientLines,
+            recipeURL: selectedRecipe.url,
+            shareAs: selectedRecipe.shareAs,
+            isFavorite: false // usere gore ayarlanacaq
+        )
+
+        
+        // RecipeDetailsController'ı storyboard üzerinden yükle ve viewModel'i teyin elemek
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let detailsVC = storyboard.instantiateViewController(withIdentifier: "RecipeDetailsController") as? RecipeDetailsController {
+            // FoodViewModeldekileri RecipeDetailsController'a kocurmek
+            detailsVC.recipeDetails = [recipeDetailViewModel]
+            navigationController?.pushViewController(detailsVC, animated: true)
+        }
+    }
+
 }
 
     

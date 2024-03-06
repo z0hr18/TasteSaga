@@ -157,7 +157,7 @@
         <!--Recipe Details Controller-->
         <scene sceneID="1Fd-Yl-1rp">
             <objects>
-                <viewController id="hPe-X1-SeJ" customClass="RecipeDetailsController" customModule="Taste_Saga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeDetailsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hPe-X1-SeJ" customClass="RecipeDetailsController" customModule="Taste_Saga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SXb-Hb-A4x">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +261,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hPe-X1-SeJ" id="WM6-Kv-LOM"/>
+                                    <outlet property="delegate" destination="hPe-X1-SeJ" id="8og-r1-YHX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mXW-0S-ANT"/>

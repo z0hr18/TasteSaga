@@ -51,6 +51,7 @@
 		8CDD56D22B89403100C80FBD /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56D12B89403100C80FBD /* FoodViewModel.swift */; };
 		8CDD56D42B89493100C80FBD /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56D32B89493100C80FBD /* RecipeDetailsController.swift */; };
 		8CDD56D72B8F650600C80FBD /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56D62B8F650600C80FBD /* IngredientCell.swift */; };
+		8CDD56D92B93BA8400C80FBD /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56D82B93BA8400C80FBD /* Users.swift */; };
 		8CDD83A82B6FF41F0043BD85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A72B6FF41F0043BD85 /* FirebaseAnalytics */; };
 		8CDD83AA2B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83A92B6FF41F0043BD85 /* FirebaseAnalyticsOnDeviceConversion */; };
 		8CDD83AC2B6FF41F0043BD85 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8CDD83AB2B6FF41F0043BD85 /* FirebaseAnalyticsSwift */; };
@@ -133,6 +134,7 @@
 		8CDD56D12B89403100C80FBD /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		8CDD56D32B89493100C80FBD /* RecipeDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsController.swift; sourceTree = "<group>"; };
 		8CDD56D62B8F650600C80FBD /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		8CDD56D82B93BA8400C80FBD /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		8CEB9FCD2B50093B0094AEEA /* Taste Saga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste Saga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9FD02B50093B0094AEEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9FD22B50093B0094AEEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				8C97F37B2B6E3A81006B3FB4 /* UserStruct.swift */,
+				8CDD56D82B93BA8400C80FBD /* Users.swift */,
 			);
 			path = UserData;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				8CDD56C42B8626EB00C80FBD /* HomeEndpoint.swift in Sources */,
 				8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */,
 				8CDD56BA2B86231100C80FBD /* Recipe.swift in Sources */,
+				8CDD56D92B93BA8400C80FBD /* Users.swift in Sources */,
 				8CDD56C82B8764AF00C80FBD /* HomeUseCase.swift in Sources */,
 				8C97F37C2B6E3A81006B3FB4 /* UserStruct.swift in Sources */,
 				8CEB9FD32B50093B0094AEEA /* SceneDelegate.swift in Sources */,
@@ -711,6 +715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77KQ3TVM8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Taste Saga/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -738,6 +743,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77KQ3TVM8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Taste Saga/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

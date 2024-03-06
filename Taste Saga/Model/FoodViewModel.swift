@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FoodViewModel: Codable {
+class FoodViewModel: Codable {//table cell
     
     let uri: String
     let title: String
@@ -48,3 +48,4 @@ class FoodViewModel: Codable {
         self.isFavorite = false
     }
 }
+
