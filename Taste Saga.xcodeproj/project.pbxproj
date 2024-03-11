@@ -37,6 +37,9 @@
 		8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C97F37D2B6E616D006B3FB4 /* RegisterController.swift */; };
 		8C9FF25E2B5EF64B00CA6EEF /* StartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF25D2B5EF64B00CA6EEF /* StartedController.swift */; };
 		8C9FF2602B5EFD5400CA6EEF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF25F2B5EFD5400CA6EEF /* LoginController.swift */; };
+		8CA9DD442B99FE2400C81E0B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9DD432B99FE2400C81E0B /* CategoryViewController.swift */; };
+		8CA9DD462B99FECA00C81E0B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9DD452B99FECA00C81E0B /* CategoryCell.swift */; };
+		8CA9DD482B9A131A00C81E0B /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9DD472B9A131A00C81E0B /* CategoryTableViewController.swift */; };
 		8CDD56B82B84CA7100C80FBD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56B72B84CA7100C80FBD /* DataModel.swift */; };
 		8CDD56BA2B86231100C80FBD /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56B92B86231100C80FBD /* Recipe.swift */; };
 		8CDD56BD2B8624A400C80FBD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD56BC2B8624A400C80FBD /* NetworkManager.swift */; };
@@ -123,6 +126,9 @@
 		8C97F37D2B6E616D006B3FB4 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		8C9FF25D2B5EF64B00CA6EEF /* StartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedController.swift; sourceTree = "<group>"; };
 		8C9FF25F2B5EFD5400CA6EEF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8CA9DD432B99FE2400C81E0B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		8CA9DD452B99FECA00C81E0B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		8CA9DD472B9A131A00C81E0B /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		8CDD56B72B84CA7100C80FBD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		8CDD56B92B86231100C80FBD /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		8CDD56BC2B8624A400C80FBD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -275,6 +281,9 @@
 		8C9FF25A2B5EF15500CA6EEF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8CA9DD432B99FE2400C81E0B /* CategoryViewController.swift */,
+				8CA9DD472B9A131A00C81E0B /* CategoryTableViewController.swift */,
+				8CA9DD452B99FECA00C81E0B /* CategoryCell.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -553,6 +562,8 @@
 				8CDD56CA2B88D2F900C80FBD /* Image.swift in Sources */,
 				8CDD56D42B89493100C80FBD /* RecipeDetailsController.swift in Sources */,
 				8CDD56BF2B86254F00C80FBD /* NetworkHelper.swift in Sources */,
+				8CA9DD462B99FECA00C81E0B /* CategoryCell.swift in Sources */,
+				8CA9DD482B9A131A00C81E0B /* CategoryTableViewController.swift in Sources */,
 				8CDD56C42B8626EB00C80FBD /* HomeEndpoint.swift in Sources */,
 				8C97F37E2B6E616D006B3FB4 /* RegisterController.swift in Sources */,
 				8CDD56BA2B86231100C80FBD /* Recipe.swift in Sources */,
@@ -560,6 +571,7 @@
 				8CDD56C82B8764AF00C80FBD /* HomeUseCase.swift in Sources */,
 				8C97F37C2B6E3A81006B3FB4 /* UserStruct.swift in Sources */,
 				8CEB9FD32B50093B0094AEEA /* SceneDelegate.swift in Sources */,
+				8CA9DD442B99FE2400C81E0B /* CategoryViewController.swift in Sources */,
 				8CDD56BD2B8624A400C80FBD /* NetworkManager.swift in Sources */,
 				8C87C9C32B77780F00287249 /* HomeCell.swift in Sources */,
 				8C9FF25E2B5EF64B00CA6EEF /* StartedController.swift in Sources */,

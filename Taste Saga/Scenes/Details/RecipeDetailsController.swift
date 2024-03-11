@@ -41,7 +41,8 @@ class RecipeDetailsController: UIViewController, UITableViewDataSource, UITableV
                timeLabel.text = "\(recipe.time) minutes"
                caloriesLabel.text = "\(recipe.calories) calories"
                servingsLabel.text = "\(recipe.servings) servings"
-               // image varsa, UIImage 
+               ingredientsTitleLabel.text = "INGREDIENTS"
+               // image varsa, UIImage
                recipeImage.showImage(image: recipe.imageURL?.absoluteString)
                // tablei yenile
                ingredientsTable.reloadData()

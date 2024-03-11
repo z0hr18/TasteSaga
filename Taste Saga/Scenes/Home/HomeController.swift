@@ -18,7 +18,7 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         fetchRecipesFromAPI()
         
-        
+        self.navigationItem.title = "FLAVOR"
         self.colllectionView.dataSource = self
         self.colllectionView.delegate = self
        
@@ -32,9 +32,9 @@ class HomeController: UIViewController {
                     self?.recipes = apiResponse.hits.map { $0.recipe }
                     self?.colllectionView.reloadData()
                     
-                    print("Yemekler:")
+//                    print("Yemekler:")
                     for recipe in self?.recipes ?? [] {
-                        print(recipe)
+//                        print(recipe)
                     }
                 case .failure(let error):
                     print("Error: \(error.localizedDescription)")
@@ -84,7 +84,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
             title: selectedRecipe.label,
             subtitle: selectedRecipe.dishType?.first ?? "Unknown",
             imageURL: URL(string: selectedRecipe.image),
-            time: selectedRecipe.totalTime ?? 30, // `totalTime` nildise 30 istifade elemek
+            time: selectedRecipe.totalTime == 0 ? 30 : selectedRecipe.totalTime ?? 30, // `totalTime` nildise yaxud 0 olsa 30 istifade elemek
             calories: selectedRecipe.calories,
             servings: selectedRecipe.yield,
             ingredients: selectedRecipe.ingredientLines,
